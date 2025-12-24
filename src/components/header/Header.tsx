@@ -6,7 +6,9 @@ export default function Header() {
     <header className="w-full border-b bg-background">
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         <span className="font-semibold text-lg">
-          ☕ Calculadora de Café
+          <Link href="/">
+            ☕ Calculadora de Café
+          </Link>
         </span>
 
         <nav className="flex items-center gap-6 text-sm">

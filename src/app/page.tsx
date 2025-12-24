@@ -1,7 +1,4 @@
-import About from "@/components/about/About";
 import CoffeeForm from "@/components/coffe-form/CoffeeForm";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
 import { Fragment } from "react/jsx-runtime";
 
 export default function Home() {
@@ -22,7 +19,7 @@ export default function Home() {
           <CoffeeForm />
         </section>
       </main>
-        <Footer />
+        
     </Fragment>
   )
 }

@@ -4,7 +4,7 @@ import { Github, Linkedin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="border-t py-6">
+    <footer className="mt-auto border-t py-6">
       <div className="mx-auto max-w-6xl px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
         <span>
           Feito com ☕ por Caio
