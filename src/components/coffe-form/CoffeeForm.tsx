@@ -16,7 +16,7 @@ const coffeeSchema = z.object({
     activity: z.string().min(1, "Atividade é obrigatória"),
     duration: z.number().min(1, "Duração deve ser maior que 0"),
     strength: z.enum(["FORTE", "SUAVE", "BEM_FRACO"]),
-    sugar: z.enum(["ACUCAR", "ADOCANTE"]),
+    sugar: z.enum(["ACUCAR", "ADOCANTE", "NENHUM"]),
 });
 
 
@@ -124,6 +124,7 @@ export default function CoffeeForm() {
                                         <SelectContent>
                                             <SelectItem value="ACUCAR">Açúcar</SelectItem>
                                             <SelectItem value="ADOCANTE">Adoçante</SelectItem>
+                                            <SelectItem value="NENHUM">Nenhum</SelectItem>
                                         </SelectContent>
                                     </Select>
                                 </div>
