@@ -7,7 +7,6 @@ import { Fragment } from "react/jsx-runtime";
 export default function Home() {
   return (
     <Fragment>
-      <Header />
 
       <main className="min-h-screen bg-muted flex items-center justify-center px-4">
         <section className="w-full max-w-lg">
@@ -22,7 +21,6 @@ export default function Home() {
 
           <CoffeeForm />
         </section>
-        <About />
       </main>
         <Footer />
     </Fragment>

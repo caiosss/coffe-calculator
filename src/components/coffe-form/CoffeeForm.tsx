@@ -14,7 +14,7 @@ import { calculateCoffee } from "@/logic/coffee-calculate";
 
 const coffeeSchema = z.object({
     activity: z.string().min(1, "Atividade é obrigatória"),
-    duration: z.coerce.number().min(1, "Duração deve ser maior que 0"),
+    duration: z.number().min(1, "Duração deve ser maior que 0"),
     strength: z.enum(["FORTE", "SUAVE", "BEM_FRACO"]),
     sugar: z.enum(["SIM", "NAO"]),
 });
@@ -72,7 +72,7 @@ export default function CoffeeForm() {
                         <Label>Quanto tempo em média levará sua atividade? (min)</Label>
                         <Input
                             type="number"
-                            {...form.register("duration")}
+                            {...form.register("duration", { valueAsNumber: true })}
                             placeholder="Ex.: 30, 60, 90"
                         />
                         {form.formState.errors.duration && (
