@@ -16,7 +16,7 @@ const coffeeSchema = z.object({
     activity: z.string().min(1, "Atividade é obrigatória"),
     duration: z.number().min(1, "Duração deve ser maior que 0"),
     strength: z.enum(["FORTE", "SUAVE", "BEM_FRACO"]),
-    sugar: z.enum(["SIM", "NAO"]),
+    sugar: z.enum(["ACUCAR", "ADOCANTE"]),
 });
 
 
@@ -35,7 +35,7 @@ export default function CoffeeForm() {
             activity: "",
             duration: 0,
             strength: "SUAVE",
-            sugar: "NAO",
+            sugar: "ACUCAR",
         },
     });
 
@@ -122,8 +122,8 @@ export default function CoffeeForm() {
                                             <SelectValue />
                                         </SelectTrigger>
                                         <SelectContent>
-                                            <SelectItem value="SIM">Sim</SelectItem>
-                                            <SelectItem value="NAO">Não</SelectItem>
+                                            <SelectItem value="ACUCAR">Açúcar</SelectItem>
+                                            <SelectItem value="ADOCANTE">Adoçante</SelectItem>
                                         </SelectContent>
                                     </Select>
                                 </div>

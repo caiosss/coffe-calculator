@@ -49,7 +49,7 @@ function buildDescription(data: CoffeeFormData) {
   }[data.strength]
 
   const sugarText =
-    data.sugar === "SIM" ? "com açúcar" : "sem açúcar"
+    data.sugar === "ACUCAR" ? "com açúcar" : "sem açúcar"
 
   const baseMessage = getRandomMessage({
     activity: data.activity,
