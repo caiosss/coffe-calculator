@@ -18,6 +18,13 @@ export default function Header() {
           >
             Sobre mim
           </Link>
+          
+          <Link
+            href="/projetos"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Projetos
+          </Link>
 
           <Link
             href="https://www.linkedin.com/in/caio-barross"

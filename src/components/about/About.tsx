@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Download, Eye, Github, Linkedin } from "lucide-react"
+import { Eye, Github, Linkedin } from "lucide-react"
 import { motion } from "framer-motion"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { useState } from "react"
